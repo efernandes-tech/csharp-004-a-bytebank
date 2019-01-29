@@ -18,6 +18,8 @@ namespace _07_ByteBank
             Console.WriteLine(conta.Agencia);
             Console.WriteLine(conta.Numero);
 
+            Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
             Console.ReadLine();
         }
     }

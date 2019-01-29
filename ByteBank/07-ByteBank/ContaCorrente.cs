@@ -9,6 +9,9 @@ namespace _07_ByteBank
     public class ContaCorrente
     {
         public Cliente Titular { get; set; }
+
+        public static int TotalDeContasCriadas { get; private set; }
+
         private int _agencia;
         public int Agencia
         {
@@ -50,6 +53,8 @@ namespace _07_ByteBank
         {
             Agencia = agencia;
             Numero = numero;
+
+            ContaCorrente.TotalDeContasCriadas++;
         }
 
         public bool Sacar(double valor)
